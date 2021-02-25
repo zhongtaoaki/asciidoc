@@ -1,0 +1,67 @@
+[[introduction]]
+== AsciiDoc 紹介
+
+=== AsciiDoc とは
+AsciiDocは軽量マークアップ言語の一つです。 +
+マークアップ言語は視覚表現や文章構造などを記述するための形式言語です。 +
+例え：
+
+* HTML
+* Markdown
+
+=== AsciiDoc 利点
+* wordに比べると、軽いし、メンテナンスしやすいし、gitに置けば複数人同時に修正できます。
+* Markdownに比べると、表現方法がより豊富です。
+
+=== 記法例
+==== リンク
+https://takumon.github.io/asciidoc-syntax-quick-reference-japanese-translation/[Asciidoctor 文法クイックリファレンス(日本語訳)]
+
+==== 画像
+image::../images/logo.png[width=300][ソフトシンク株式会社]
+
+==== コードブロック
+[source, java]
+----
+ public static void main(String[] args) {
+   System.out.println("Hello, world.");
+ }
+----
+
+==== テーブル
+.テーブルタイトル
+[options="header"]
+|=======================
+|Col 1|Col 2      |Col 3
+|1    |Item 1     |a
+|2    |Item 2     |b
+|3    |Item 3     |c
+|=======================
+
+==== Q&A
+[qanda]
+Asciidoctorとは何ですか?::
+  AsciiDocをRubyで実装したものです。
+生命、宇宙、そして万物についての究極の疑問の答えは何ですか？:: 42です。
+
+==== コメント
+// 一行コメントです。
+
+==== テキストフォーマット
+*太字の語句* と **太**字の文**字** +
+_イタリックの語句_ と __イタ__リックの文__字__ +
+Asciidoctorは #マークアップ# 言語の一つです。
+
+
+==== 脚注
+[NOTE]
+====
+脚注ブロックは複雑はコンテンツを含むことができます。
+
+.リスト
+- 一
+- 二
+- 三
+
+別のパラグラフ
+====

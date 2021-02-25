@@ -1,0 +1,13 @@
+// 表紙を設定するadocファイル
+
+= asciidoc勉強会: ソフトシンク
+:author: 鍾　涛
+:revdate: 2021/02/26
+:revnumber: 1.0
+:lang: ja
+:doctype: book
+:title-logo-image: image::../images/logo.svg[width=300]
+
+include::00_introduction.adoc[]
+
+include::01_setup.adoc[]

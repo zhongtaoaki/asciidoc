@@ -1,0 +1,25 @@
+== Asciidoctor環境構築手順
+
+=== Rubyインストール
+* asccidocをインストールにはRubyの環境が必要となります。 +
+ちなみに、asccidocはRubyで書いたものです。
+* https://rubyinstaller.org/downloads/[Rubyインストーラー]に自分の環境に相応しいバージョンを選び、ダウンロードします。 +
+本記事利用しているバージョン： +
+** WITHOUT DEVKIT
+** rubyinstaller-3.0.0-1-x64.exe
+* インストーラーをダブルクリックし、特に変更なしデフォルトのままインストールします。
+* 成功したかどうかを確認します。
+[source, shell]
+----
+$ ruby -v
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x64-mingw32]
+----
+
+=== Asciidoctorをインストール
+* gemコマンドを利用してAsciidoctorをインストールします。
+[source, shell]
+----
+$ gem install asciidoctor             # asciidoctorのインストール
+$ gem install --pre asciidoctor-pdf   # asciidoctor-pdfのインストール
+$ gem install asciidoctor-pdf-cjk     # PDF変換のレイアウト崩れ対応
+----
